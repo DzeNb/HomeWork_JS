@@ -1,0 +1,35 @@
+1)	for (var i=5; i>0; i--) {
+         document.write (i+ '<br/>');
+         }
+
+
+2)	for (var i=1; i<=10; i++) {  
+         document.write ('3*'+ i +'='+ 3*i +'<br/>');
+         }
+
+3)	    var a = prompt('Введите любое целое положительное число:');
+        var sum=0;
+          if (a<0) { 
+            document.write ('Вы ввели отрицательное число');
+          } else {
+            if (Math.ceil(a)-a>0) {
+              document.write ('Вы ввели нецелое число');
+            } else {
+              for (var i=1; i<=a; i++) {
+                var sum=sum+i;  
+            }
+            document.write ('Сумма всех чисел '+ sum);
+            }
+          }
+
+4)	// Функция  
+       function NumbInterval() {
+         var i = 1;
+         var timerId = setInterval(function() {
+           document.write(i + '<br/>');
+           (i == 10) ? clearInterval(timerId):
+           i++;
+         }, 300);
+       }
+      	// Вызов
+       NumbInterval()
