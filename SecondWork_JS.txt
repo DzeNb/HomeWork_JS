@@ -1,35 +1,35 @@
-1)	for (var i=5; i>0; i--) {
-         document.write (i+ '<br/>');
-         }
+1)  for (var i=5; i>0; i--) {
+      document.write (i+ '<br/>');
+    }
 
 
 2)	for (var i=1; i<=10; i++) {  
-         document.write ('3*'+ i +'='+ 3*i +'<br/>');
-         }
+      document.write ('3*'+ i +'='+ 3*i +'<br/>');
+    }
 
-3)	    var a = prompt('Введите любое целое положительное число:');
-        var sum=0;
-          if (a<0) { 
-            document.write ('Вы ввели отрицательное число');
+3)	var a = prompt('Р’РІРµРґРёС‚Рµ Р»СЋР±РѕРµ С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ:');
+      var sum=0;
+        if (a<0) { 
+          document.write ('Р’С‹ РІРІРµР»Рё РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ');
+        } else {
+          if (Math.ceil(a)-a>0) {
+            document.write ('Р’С‹ РІРІРµР»Рё РЅРµС†РµР»РѕРµ С‡РёСЃР»Рѕ');
           } else {
-            if (Math.ceil(a)-a>0) {
-              document.write ('Вы ввели нецелое число');
-            } else {
-              for (var i=1; i<=a; i++) {
-                var sum=sum+i;  
+            for (var i=1; i<=a; i++) {
+              var sum=sum+i;  
             }
-            document.write ('Сумма всех чисел '+ sum);
-            }
+          document.write ('РЎСѓРјРјР° РІСЃРµС… С‡РёСЃРµР» '+ sum);
           }
+        }
 
-4)	// Функция  
-       function NumbInterval() {
-         var i = 1;
-         var timerId = setInterval(function() {
-           document.write(i + '<br/>');
-           (i == 10) ? clearInterval(timerId):
-           i++;
-         }, 300);
-       }
-      	// Вызов
-       NumbInterval()
+4)	// Р¤СѓРЅРєС†РёСЏ  
+    function NumbInterval() {
+      var i = 1;
+      var timerId = setInterval(function() {
+        document.write(i + '<br/>');
+        (i == 10) ? clearInterval(timerId): 
+        i++;
+      }, 300);
+    }
+    // Р’С‹Р·РѕРІ
+    NumbInterval()
