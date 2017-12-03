@@ -1,0 +1,64 @@
+1)        (w + g < 10) ? result = 'Мало' : result = 'Много'; 
+
+2)        (a > 1 && a < 10) ? result = 'Верно' : result = 'Неверно'; 
+          alert (result);
+
+3)        var a = prompt ('Какой язык програмирования Вы изучаете?');
+          switch (a) {
+          case 'JavaScript':
+          case 'C#':
+          case 'C++':
+          case 'Python':
+          alert ('Верно!');
+          break;
+          default:
+          alert ('Попробуйте еще раз!');
+          }
+
+4)       var number = prompt ('Укажите число от 1 до 4'), result;
+         switch (number) {
+         case '1':
+         result = 'Зима';
+         break;
+         case '2':
+         result = 'Весна';
+         break;
+         case '3':
+         result = 'Лето';
+         break;
+         case '4':
+         result = 'Осень';
+         break;
+         default:
+         result = 'Вы ввели число отличное от 1..4';
+         }
+         alert (result);  
+
+5)   	var log = prompt('Введите Ваш логин:');  
+    	if (log == 'admin') {
+    	var pass = prompt('Введите Ваш пароль:');
+    	if (pass == 'JavaScript') {
+    	alert('Welcome!');
+    	} 
+    	else if (pass == null) { 
+    	alert('Вход отменён');
+    	} 
+    	else {
+    	alert('Пароль неверен');
+    	}
+    	} 
+    	else if (log == null) { 
+        alert('Вход отменён');
+        } 
+        else {
+        alert('Я вас не знаю');
+        } 
+
+6)      var a = prompt('Введите первое число:');
+        var b = prompt('Введите второе число:');
+        var c = +a + +b;
+        c < 50 ? 
+        alert ('Ваше число ' + c + ' меньше чем 50'):
+        alert ('Ваше число ' + c + ' больше чем 50');  
+
+
