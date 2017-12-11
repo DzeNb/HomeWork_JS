@@ -1,0 +1,46 @@
+1)  var sum = 0;
+    var user = {
+      'Alex': 100,
+      'Jon': 150,
+      'Kate': 150,
+      'Vasya': 205,
+      'Liza': 123
+    };
+    for (var name in user) {
+      sum += user[name];
+    }
+    alert (sum);
+
+
+2)  var max = 0;
+    maxName = '';
+    var user = {
+      'Alex': 100,
+      'Jon': 150,
+      'Kate': 350,
+      'Vasya': 205,
+      'Liza': 123
+    };
+    for (var name in user) {
+      if (max < user[name]) {
+        max = user[name];
+        maxName = name;
+      }
+    }
+    alert (maxName);
+
+
+3)  var menu = {   
+      width: 300,   
+      height: 400,   
+      title: "My title" 
+    };
+    function Multiplication (object) {
+      for (var key in object) {
+        if (!isNaN(parseFloat(object[key])) && isFinite(object[key])) {
+          object[key] *= 2;
+        }
+      }
+    }
+    Multiplication (menu);
+    alert( 'width=' + menu.width + ' height=' + menu.height + ' title=' + menu.title );
